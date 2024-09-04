@@ -9,4 +9,4 @@ BOT_TOKEN = getenv("BOT_TOKEN", "7214944125:AAFaBc-DFKZ_IATQ9wkST4Ci1ChYKeOcblo"
 OWNER_ID = int(getenv("OWNER_ID", "6486192717"))
 MONGODB_CONNECTION_STRING = getenv("MONGO_DB", "mongodb+srv://prisarax:WxuKANYzL5CPyY7d@cluster0.jxlwo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 LOG_GROUP = int(getenv("LOG_GROUP", "-1002204974717"))
-FORCESUB = getenv("FORCESUB", "https://t.me/blacklumidb")
+FORCESUB = getenv("FORCESUB", "blacklumidb")
