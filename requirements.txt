@@ -11,4 +11,3 @@ uvloop
 yt-dlp
 flask
 werkzeug==2.2.2
-telethon.sync
