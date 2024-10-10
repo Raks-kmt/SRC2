@@ -174,8 +174,8 @@ async def run_batch(userbot, client, sender, countdown, link):
                 ids_data.pop(str(sender))
                 break
             else:
-                fw_alert = await client.send_message(sender, f'Sleeping for {fw.value + 1} second(s) due to Telegram floodwait.')
-                ors = fw.value + 1
+                fw_alert = await client.send_message(sender, f'Sleeping for {fw.value + 15} second(s) due to Telegram floodwait.')
+                ors = fw.value + 5
                 await asyncio.sleep(ors)
                 await fw_alert.delete()
                 try:
