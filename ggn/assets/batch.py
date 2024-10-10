@@ -137,19 +137,19 @@ async def run_batch(userbot, client, sender, countdown, link):
         timer = 15  # Increased default timer value
 
         if i < 250:
-            timer = 2
+            timer = 20
         elif 250 <= i < 1000:
-            timer = 2
+            timer = 25
         elif 1000 <= i < 10000:
-            timer = 3
+            timer = 30
         elif 10000 <= i < 50000:
-            timer = 3
+            timer = 35
         elif 50000 <= i < 100000:
-            timer = 4
+            timer = 40
         elif 100000 <= i < 200000:
-            timer = 4
+            timer = 45
         elif i >= 200000:
-            timer = 5  # Increased timer value for larger counts
+            timer = 60  # Increased timer value for larger counts
 
         # Adjust the timer for links other than channel links
         if 't.me/c/' not in link:
