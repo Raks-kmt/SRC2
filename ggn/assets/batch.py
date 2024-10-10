@@ -137,19 +137,19 @@ async def run_batch(userbot, client, sender, countdown, link):
         timer = 15  # Increased default timer value
 
         if i < 250:
-            timer = 20
+            timer = 2
         elif 250 <= i < 1000:
-            timer = 25
+            timer = 2
         elif 1000 <= i < 10000:
-            timer = 30
+            timer = 3
         elif 10000 <= i < 50000:
-            timer = 35
+            timer = 3
         elif 50000 <= i < 100000:
-            timer = 40
+            timer = 4
         elif 100000 <= i < 200000:
-            timer = 45
+            timer = 4
         elif i >= 200000:
-            timer = 60  # Increased timer value for larger counts
+            timer = 5  # Increased timer value for larger counts
 
         # Adjust the timer for links other than channel links
         if 't.me/c/' not in link:
@@ -174,8 +174,8 @@ async def run_batch(userbot, client, sender, countdown, link):
                 ids_data.pop(str(sender))
                 break
             else:
-                fw_alert = await client.send_message(sender, f'Sleeping for {fw.value + 15} second(s) due to Telegram floodwait.')
-                ors = fw.value + 5
+                fw_alert = await client.send_message(sender, f'Sleeping for {fw.value + 1} second(s) due to Telegram floodwait.')
+                ors = fw.value + 1
                 await asyncio.sleep(ors)
                 await fw_alert.delete()
                 try:
